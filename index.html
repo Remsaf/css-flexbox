@@ -4,189 +4,46 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CSS Flexbox Layout</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/bfe506700c.js" crossorigin="anonymous"></script>
-
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-    
-    body * {
-      font-family: 'Lexend-Deca',sans-serif;
-      font-size: 15px;
-      color: #fff;
-    }
-    
-    .wrapper-inside {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-      background-color:f2f2f2;
-      
-      
-    }
-    
-    .sedans, .suvs, .luxury {
-      width: 245px;
-      height: 400px;
-      padding: 30px;
-    }
-    .sedans {
-      background-color:#e28525;
-      border-radius: 10px 0 0 10px;
-    }
-    
-    .suvs {
-      background-color:#016972;
-    }
-    
-    .luxury {
-      background-color:#00403f;
-      border-radius: 0 10px 10px 0;
-    }
-    
-    .sedans-img-img-1,
-    .suvs-img-img-2,
-    .luxury-img-img-3 {
-      width: 45px;
-      height: 82px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    
-    }
-    
-    .sedan-img-img-1-shadow,
-    .suvs-img-img-2-shadow,
-    .luxury-img-img-3-shadow {
-      width: 30px;
-      height: 30px;
-      background: #b0691b;
-      border-radius: 50%;
-    }
-    
-    .suvs-img-img-2-shadow {
-      background: #01545c;
-    
-    }
-    
-    .luxury-img-img-3-shadow {
-      background: #013330;
-    
-    }
-    
-    #car-A {
-      margin-left: -10px;
-      color: #fcc465;
-    }
-    
-    #car-B {
-      margin-left: -10px;
-      color: #25b5be
-      
-    }
-    
-    #car-C {
-      margin-left: -10px;
-      color: #2bb79d;
-    }
-    
-     h1 {
-      font-size: 30px;
-      text-align: left;
-      padding-bottom: 20px;
-      text-shadow: 0px 0px 2px white;
-      font-weight: bold;
-      font-family: 'Big Shoulders Display', cursive;
-    }
-    
-    .para1,.para2,.para3 {
-      color: a(0, 0%, 100%, 0.75)hsl;
-    }
-    
-    button {
-      color: #e28525;
-      border: none;
-      padding: 10px 25px;;
-      border-radius: 100px;
-      margin-top: 70px;
-      text-shadow: 0px 0px 1px #e28525;
-    }
-    
-    .btn-suvs {
-      color: #2bb79d;
-    }
-    
-    .btn-luxury {
-      color: #026765;
-    }
-    
- </style>
- 
+  <title>CSS Flexbox Layout Project</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <section class="container">
-    <div class="wrapper-inside">
-
-      <div class="sedans">
-        <div class="sedans-img">
-          <div class="sedans-img-img-1">
-            <div class="sedan-img-img-1-shadow ">
-            </div>
-
-            <div class="sedans-img-img-1-car">
-              <i  class="fa-solid fa-car-side" id="car-A"></i>
-            </div>
-
-          </div>
-        </div>
-        <h1 class="header">SEDANS</h1>
-        <p class="para1">Choose a sedan for its affordability and excellent feul economy.Ideal for cruising in the city or on your next road trip.</p>
-        <button class="btn btn-sedans">Learn More</button>
-      </div>
-
-      <div class="suvs">
-        <div class="suvs-img">
-          <div class="suvs-img-img-2">
-            <div class="suvs-img-img-2-shadow ">
-            </div>
-
-            <div class="suvs-img-img-2-car">
-              <i  class="fa-solid fa-van-shuttle" id="car-B"></i>
-            </div>
-
-          </div>
-        </div>
-        <h1 class="header">SUVS</h1>
-        <p class="para2">Choose a sedan for its affordability and excellent feul economy.Ideal for cruising in the city or on your next road trip.</p>
-        <button class="btn btn-suvs">Learn More</button>
-
-      </div>
-      <div class="luxury">
-      <div class="slusuryuvs">
-        <div class="luxury-img">
-          <div class="luxury-img-img-3">
-            <div class="luxury-img-img-3-shadow ">
-            </div>
-
-            <div class="luxury-img-img-3-car">
-              <i  class="fa-solid fa-car mirrors" id="car-C"></i>
-            </div>
-
-          </div>
-        </div>
-        <h1 class="header">LUXURY</h1>
-        <p class="para3">Choose a sedan for its affordability and excellent feul economy.Ideal for cruising in the city or on your next road trip.</p>
-        <button class="btn btn-luxury">Learn More</button>
-      </div>
+  <div class="container">
+    <div class="link">
+      <a href="grid.html">Click to check the grid project</a>
     </div>
-  </section>
+  <div class="wrapper">
+    <div class="box box1">
+      <img src="https://digitshack.com/codepen/mentor3/icon-sedans.svg" alt="">
+      <h2>Sedans</h2>
+      <p>Choose a sedan for its affordability and excellent fuel economy. Ideal for cruising in the city
+        or on your next road trip.</p>
+      <a href="#">Learn More</a>
+    </div>
+    <div class="box box2">
+      <img src="https://digitshack.com/codepen/mentor3/icon-suvs.svg" alt="">
+      <h2>SUVs</h2>
+      <p>Take an SUV for its spacious interior, power, and versatility. Perfect for your next family vacation
+        and off-road adventures.</p>
+      <a href="#">Learn More</a>
+    </div>
+    <div class="box box3">
+      <img src="https://digitshack.com/codepen/mentor3/icon-luxury.svg" alt="">
+      <h2>Luxury</h2>
+      <p>Cruise in the best car brands without the bloated prices. Enjoy the enhanced comfort of a luxury
+        rental and arrive in style.</p>
+      <a href="#">Learn More</a>
+    </div>
+  </div>
+</div>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
